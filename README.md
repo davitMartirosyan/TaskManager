@@ -1,20 +1,20 @@
 # Task Manager
 
-Task Manager is a simple command-line application written in C that allows users to manage their tasks efficiently. Users can add, remove, update, and list tasks using the provided functionalities.
+Task Manager is a simple command-line application written in C that allows users to manage their tasks efficiently. Users can **create**, **read**, **update**, **delete** and **list** tasks using the provided functionalities.
 
 ## Features
 
-- Add tasks with unique IDs, titles, descriptions, statuses, and priorities.
-- Remove tasks based on their IDs.
+- Create tasks with unique IDs, titles, descriptions, statuses, and priorities.
+- Read tasks based on their IDs.
 - Update task attributes such as title, description, status, and priority.
+- Delete tasks based on their IDs.
 - List all tasks in a tabular format, displaying their details.
 
 ## Prerequisites
 
 Before running the Task Manager application, ensure that you have the following prerequisites installed on your system:
 
-- C Compiler (e.g., GCC)
-- Operating System: Windows, macOS, Linux
+- C Compiler (e.g., GCC or CC, make,)
 
 ## Installation
 
