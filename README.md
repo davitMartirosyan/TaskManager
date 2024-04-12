@@ -21,7 +21,7 @@ Before running the Task Manager application, ensure that you have the following 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/task-manager.git
+    git clone https://github.com/davitmartirosyan/task-manager.git
     ```
 
 2. **Navigate to the project directory:**
@@ -39,30 +39,15 @@ Before running the Task Manager application, ensure that you have the following 
 4. **Run the executable file:**
 
     ```bash
-    ./task_manager
+    ./manager
     ```
 
 ## Usage
 
 Once the Task Manager application is running, you can use the following commands to manage tasks:
 
-- `add`: Add a new task to the task list.
-- `remove`: Remove an existing task from the task list.
+- `create`: Create a new task to the task list.
+- `read`: Read an existing task from the task list.
 - `update`: Update attributes of an existing task.
+- `delete`: Delete an existing task from the task list.
 - `list`: List all tasks in the task list.
-
-For detailed usage instructions and command syntax, refer to the [User Manual](./docs/user-manual.md).
-
-## Contributing
-
-Contributions to the Task Manager project are welcome! To contribute:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature`)
-3. Make your changes and commit them (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature`)
-5. Create a new Pull Request.
-
-## License
-
-This project is licensed under the [MIT License](./LICENSE).
