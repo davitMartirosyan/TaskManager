@@ -18,6 +18,7 @@ typedef enum Priority
 
 typedef struct User
 {
+    int uid;
     char uname[32];
     char pass[32];
 }User;
@@ -25,6 +26,7 @@ typedef struct User
 typedef struct Task
 {
     int id;
+    int uid;
     char *title;
     char *description;
     Status task_status;
