@@ -14,7 +14,7 @@ $(NAME) : $(OBJ)
 %.o : %.c $(INCLUDES)
 	$(CC) $(FLAGS) -c $< -o $@
 
-clean: 
+clean:
 	@rm -rf $(OBJ)
 
 fclean : clean

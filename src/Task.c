@@ -44,14 +44,31 @@ Allinone_t* createTask(Allinone_t *all)
 
 Allinone_t* readTask(Allinone_t *all)
 {
-    int fd = open("taskManager/taskManager.tm", O_RDONLY);
+    char **col;
+    int fd;
+    char *line = NULL;
+    int id = -1;
+    char *t_id = readline("Id: ");
+    t_id = ft_strtrim(t_id, " ");
+    if (!ft_isdigit(t_id[0]))
+        return (NULL);
+    id = ft_atoi(t_id);
+    fd = open("taskManager/taskmanager.tm", O_RDONLY);
     if (fd < 0)
         return (NULL);
-    char *gnl = get_next_line(fd);
-    while (gnl)
+    line = get_next_line(fd);
+    while (line)
     {
-        printf("%s", gnl);
-        gnl = get_next_line(fd);
+        col = ft_split(line, ':');
+        if (ft_atoi(col[0]) == id && ft_atoi(col[1]) == g_uid)
+        {
+            printf("*********************\n");
+            int i = -1;
+            while (col[++i])
+                printf("%s\n", col[i]);
+            printf("*********************\n");
+        }
+        line = get_next_line(fd);
     }
     return (NULL);
 }

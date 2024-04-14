@@ -43,6 +43,8 @@ int main( void )
         if (g_uid > -1)
         {
             char *cmd = readline("$: ");
+            if (strcmp(cmd, "logout") == 0)
+                g_uid = -1;
             int fid = findCommand(table, cmd);
             if (fid > -1)
             {
