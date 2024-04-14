@@ -13,6 +13,6 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include "Structs.h"
-#include "../libft/libft.h"
+#include "../libfc/libft.h"
 
 #endif
