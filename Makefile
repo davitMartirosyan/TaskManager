@@ -1,14 +1,15 @@
 NAME = manager
 CC = gcc -I Includes/
-FLAGS = -Wall -Wextra -Werror
+FLAGS = #-Wall -Wextra -Werror
 SRC = $(wildcard src/*.c) taskManager.c
+ARCHIVE = libft/libft.a
 OBJ = $(SRC:.c=.o)
 INCLUDES = $(wildcard Includes/*.h)
-
+LINKER = -lreadline
 all: $(NAME)
 
 $(NAME) : $(OBJ)
-	$(CC) $(FLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(FLAGS) $(OBJ) $(ARCHIVE) $(LINKER)  -o $(NAME)
 
 %.o : %.c $(INCLUDES)
 	$(CC) $(FLAGS) -c $< -o $@

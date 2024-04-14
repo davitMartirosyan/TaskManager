@@ -1,6 +1,8 @@
 #ifndef STRUCTS_H
 #define STRUCTS_H
 #include "Core.h"
+typedef struct Allinone_t  Allinone_t;
+typedef Allinone_t* (*fn)(Allinone_t *);
 
 typedef enum Status
 {
@@ -9,16 +11,6 @@ typedef enum Status
     REVIEW,             // 2
     SOLVED              // 3
 }Status;
-
-typedef enum WeekDay {
-    MON = 'A',
-    TUE,
-    WED,
-    THU,
-    FRI,
-    SAT,
-    SUN
-}WeekDay_t;
 
 typedef enum Priority
 {
@@ -54,4 +46,22 @@ typedef struct TaskList
 }TaskList;
 
 
+typedef struct table_t
+{
+    char *f_names[5];
+    fn fcnt[5];
+}table_t;
+
+typedef struct Allinone_t
+{
+    int id;
+    int u_id;
+    Task *task;
+}Allinone_t;
+
+// createTask
+// readTask
+// updateTask
+// deleteTask
+// listTask
 #endif

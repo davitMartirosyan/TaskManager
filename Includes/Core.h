@@ -7,5 +7,12 @@
 #include <sys/mman.h>
 #include <stdbool.h>
 #include <stdint.h>
+#include <stdio.h>
+#include <readline/readline.h>
+#include <readline/history.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include "Structs.h"
+#include "../libft/libft.h"
 
 #endif

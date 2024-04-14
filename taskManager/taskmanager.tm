@@ -1,6 +1,4 @@
-#example
-Id : Uid : Title : Description : Status : Priority
-
-
-1 : Coding 1 Hour : You should code in C a hour : 1 : 2 |
-
+1:1:mytitle:mytaskDescription:priority
+2:1:mytitle:sfgdfgdsfg:dsfgsdfdsfg
+1:1:newTaskTitle:newTaskDescription:priority
+2:1:absoluteTitlec:d:as
